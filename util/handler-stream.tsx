@@ -1,5 +1,5 @@
-import App from '../src/app';
-import { renderToReadableStream } from 'react-dom/server';
+import App from "../src/app";
+import { renderToReadableStream } from "react-dom/server";
 
 export default async function Handler(req: Request) {
   let didError = false;
@@ -13,6 +13,6 @@ export default async function Handler(req: Request) {
 
   return new Response(stream, {
     status: didError ? 500 : 200,
-    headers: { 'Content-Type': 'text/html' },
+    headers: { "Content-Type": "text/html" },
   });
 }
