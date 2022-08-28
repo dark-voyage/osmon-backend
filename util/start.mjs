@@ -30,7 +30,7 @@ await build({
   format: "esm",
 });
 
-// read the generated code
+// Read the generated code
 let code = await readFile(START_FILE_OUT);
 
 const runtime = new EdgeRuntime({ initialCode: code });
