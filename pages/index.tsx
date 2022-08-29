@@ -17,15 +17,15 @@ const Home: NextPage = () => {
   if (!data) {
     return (
       <html lang="en">
-      <Header />
-      <body>
-      <div style={{ height: "100%" }}>
-        <Card />
-      </div>
-      <Footer />
-      </body>
+        <Header />
+        <body>
+          <div style={{ height: "100%" }}>
+            <Card />
+          </div>
+          <Footer />
+        </body>
       </html>
-    )
+    );
   }
 
   const { ip, city, isCold } = data;

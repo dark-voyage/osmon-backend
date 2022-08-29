@@ -2,7 +2,12 @@ export default function Footer() {
   return (
     <footer>
       <p className="company">
-        <a target="_blank" rel="noreferrer" href="https://vercel.com" aria-label="Vercel">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://vercel.com"
+          aria-label="Vercel"
+        >
           <svg
             viewBox="0 0 4438 1000"
             fill="none"
