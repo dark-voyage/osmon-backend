@@ -10,8 +10,22 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Home: NextPage = () => {
   const { data, error } = useSWR("/api/info", fetcher);
 
-  if (!data || error) {
+  if (error) {
     return <div>Oops, there is something wrong with server...</div>;
+  }
+
+  if (!data) {
+    return (
+      <html lang="en">
+      <Header />
+      <body>
+      <div style={{ height: "100%" }}>
+        <Card />
+      </div>
+      <Footer />
+      </body>
+      </html>
+    )
   }
 
   const { ip, city, isCold } = data;
