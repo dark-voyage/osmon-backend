@@ -16,6 +16,7 @@ const Home: NextPage = () => {
 
   const { ip, city, isCold } = data;
 
+
   return (
     <html lang="en">
       <Header />
@@ -38,7 +39,8 @@ const Home: NextPage = () => {
                         ? "GeoIP information could not be derived from your IP"
                         : undefined
                     }
-                    className={city === null ? "na" : ""}
+                    // @ts-ignore
+                    className={city === null ? "na" : null}
                   >
                     {city === null ? "N/A" : city}
                   </strong>
