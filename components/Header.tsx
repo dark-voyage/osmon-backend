@@ -1,6 +1,8 @@
+import Head from "next/head"
+
 export default function Header() {
   return (
-    <head>
+    <Head>
       <title>Osmon Registry</title>
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
@@ -19,6 +21,6 @@ export default function Header() {
       />
       <meta name="twitter:image" content="/og/card.png" />
       <meta name="twitter:image:alt" content="Osmon Lang Open Graph" />
-    </head>
+    </Head>
   );
 }
