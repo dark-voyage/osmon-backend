@@ -16,7 +16,6 @@ const Home: NextPage = () => {
 
   const { ip, city, isCold } = data;
 
-
   return (
     <html lang="en">
       <Header />
