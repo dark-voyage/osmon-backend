@@ -19,7 +19,7 @@ export default function Header() {
         name="twitter:description"
         content="Backend Serverless API made for Osmon"
       />
-      <meta name="twitter:image" content="/og/card.png" />
+      <meta name="twitter:image" content="/card.png" />
       <meta name="twitter:image:alt" content="Osmon Lang Open Graph" />
     </Head>
   );
